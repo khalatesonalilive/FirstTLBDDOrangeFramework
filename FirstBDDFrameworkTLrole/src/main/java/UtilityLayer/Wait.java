@@ -23,4 +23,11 @@ public class Wait extends BaseClass{
 		
 		new WebDriverWait(driver,Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(wb)).click();
 	}
+	
+	//getAttribute() method
+	public static String getAttribute(WebElement wb,String value)
+	{
+	return	new WebDriverWait(driver,Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOf(wb)).getAttribute(value);
+	}
+	
 }
