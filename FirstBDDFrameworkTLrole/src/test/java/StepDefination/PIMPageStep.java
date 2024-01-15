@@ -36,4 +36,14 @@ public class PIMPageStep extends BaseClass {
 	public void user_click_on_employee_list_button() {
 		pIMPage.clickOnEmployeeList();
 	}
+	
+	@When("user enter employeeId")
+	public void user_enter_employee_id() {
+		pIMPage.enterEmployeeId(empid);
+		
+	}
+	@When("user click on search button")
+	public void user_click_on_search_button() {
+		pIMPage.clickOnSearch();
+	}
 }

@@ -17,3 +17,7 @@ Feature: Test the OrangeHRM Functionality
   Scenario: Validate Employee List Functionality
     When user capture the Employee id
     And user click on Employee List Button
+
+  Scenario: Search Employee Functionality
+    When user enter employeeId
+    And user click on search button

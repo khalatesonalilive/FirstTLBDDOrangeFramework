@@ -64,5 +64,14 @@ public class PIMPage extends BaseClass {
 
 	}
 
-	
+	public void enterEmployeeId(String empid) {
+		Wait.sendKeys(enterEmployeeId, empid);
+
+	}
+
+	public void clickOnSearch() {
+		Wait.click(searchButton);
+
+	}
+
 }
