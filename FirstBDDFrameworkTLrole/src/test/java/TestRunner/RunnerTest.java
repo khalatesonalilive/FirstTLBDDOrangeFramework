@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features= {"AllFeaturesFile"},
 		glue= {"StepDefination"},
-		dryRun=false,
+		dryRun=true,
 		monochrome=true
 		
 		
