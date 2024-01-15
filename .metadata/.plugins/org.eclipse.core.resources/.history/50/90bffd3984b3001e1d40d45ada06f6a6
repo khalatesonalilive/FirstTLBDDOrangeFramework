@@ -1,0 +1,16 @@
+package PageLayer;
+
+import BaseLayer.BaseClass;
+
+public class LoginPage extends BaseClass {
+
+	@FindBy(name="")
+	private WebElement  ;
+	
+	@FindBy(name="")
+	private WebElement  ;
+	
+	
+	@FindBy(xpath="")
+	private WebElement  ;
+}

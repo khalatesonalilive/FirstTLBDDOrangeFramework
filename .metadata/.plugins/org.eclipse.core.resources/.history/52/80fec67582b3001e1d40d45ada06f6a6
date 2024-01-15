@@ -1,0 +1,9 @@
+package BaseLayer;
+
+public class BaseClass {
+
+	public BaseClass()
+	{
+		File f=new File(System.getProperty("user.dir")+"//src//main//java//ConfigurationLayer//config.properties");
+	}
+}

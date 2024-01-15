@@ -1,0 +1,24 @@
+package TestRunner;
+
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+		
+		features= {""},
+		glue= {""},
+		dryRun=false,
+		monochrome=true
+		
+		
+		
+		
+		
+		)
+
+
+
+
+
+public class RunnerTest {
+
+}

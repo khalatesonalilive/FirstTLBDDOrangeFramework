@@ -1,0 +1,18 @@
+
+public class LoginPageSteps extends BaseClass {
+
+	@Given("user is on Login Page")
+	public void user_is_on_login_page() {
+	    
+
+	@When("user enter valid username and password")
+	public void user_enter_valid_username_and_password() {
+	    
+	}
+
+	@Then("user click Login Button")
+	public void user_click_login_button() {
+	    
+	}
+
+}
