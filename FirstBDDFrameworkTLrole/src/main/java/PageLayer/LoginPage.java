@@ -24,13 +24,16 @@ public class LoginPage extends BaseClass {
 
 	}
 
-	public void enterUnameAndPassFunctionality(String userName, String passWord) {
+	public void enterUnameAndPassFunctionality(String userName, String passWord) throws InterruptedException {
+		Thread.sleep(3000);
 		Wait.sendKeys(uname, userName);
+		Thread.sleep(3000);
 		Wait.sendKeys(pass, passWord);
 
 	}
 
-	public void clickLoginButton() {
+	public void clickLoginButton() throws InterruptedException {
+		Thread.sleep(3000);
 		Wait.click(loginbutton);
 	}
 

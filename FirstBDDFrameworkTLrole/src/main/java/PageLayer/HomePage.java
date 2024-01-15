@@ -11,25 +11,28 @@ public class HomePage extends BaseClass {
 	@FindBy(xpath="//img[@alt='client brand banner']")
 	private WebElement HomePageLogo ;
 	
-	public HomePage()
+	public HomePage() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		PageFactory.initElements(driver, this);
 		
 	}
 	
-	public String getTitle()
+	public String getTitle() throws InterruptedException
 	{
-		
+		Thread.sleep(3000);
 	return	driver.getTitle();
 	}
 	
-	public String getUrl()
+	public String getUrl() throws InterruptedException
 	{
+		Thread.sleep(3000);
 	return	driver.getCurrentUrl();
 		
 	}
-	 public boolean getHomePageLogo()
+	 public boolean getHomePageLogo() throws InterruptedException
 	 {
+		 Thread.sleep(3000);
 		return HomePageLogo.isDisplayed();
 	 }
 }

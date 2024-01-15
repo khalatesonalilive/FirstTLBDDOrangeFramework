@@ -17,14 +17,14 @@ public class LoginPageStep extends BaseClass{
 	}
 
 	@When("user enter valid username and password")
-	public void user_enter_valid_username_and_password() {
+	public void user_enter_valid_username_and_password() throws InterruptedException {
 	    
 		 loginPage=new LoginPage();
 		 loginPage.enterUnameAndPassFunctionality("Admin", "admin123");
 	}
 
 	@Then("user click Login Button")
-	public void user_click_login_button() {
+	public void user_click_login_button() throws InterruptedException {
 		loginPage.clickLoginButton();
 	}
 

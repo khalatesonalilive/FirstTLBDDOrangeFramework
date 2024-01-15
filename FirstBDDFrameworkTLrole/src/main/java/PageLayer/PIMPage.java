@@ -36,42 +36,76 @@ public class PIMPage extends BaseClass {
 	@FindBy(xpath = "//button[text()=' Search ']")
 	private WebElement searchButton;
 
+	@FindBy(xpath = "(//i[@class='oxd-icon bi-check oxd-checkbox-input-icon'])[1]")
+	private WebElement checkboxbutton;
+
+	@FindBy(xpath = "//button[text()=' Delete Selected ']")
+	private WebElement deleteselectedButton;
+
+	@FindBy(xpath = "//button[text()=' Yes, Delete ']")
+	private WebElement yesdeletedButton;
+
 	public PIMPage() {
 		PageFactory.initElements(driver, this);
 	}
 
-	public String verifyPIMPageUrl() {
+	public String verifyPIMPageUrl() throws InterruptedException {
+		Thread.sleep(3000);
 		Wait.click(pimLink);
 
 		return driver.getCurrentUrl();
 	}
 
-	public void firstNameAndLastName(String FirstName, String LastName) {
+	public void firstNameAndLastName(String FirstName, String LastName) throws InterruptedException {
+		Thread.sleep(3000);
 		Wait.click(addEmployeeButton);
+		Thread.sleep(3000);
 		Wait.sendKeys(fname, FirstName);
+		Thread.sleep(3000);
 		Wait.sendKeys(lname, LastName);
+		Thread.sleep(3000);
 		Wait.click(saveButton);
 
 	}
 
-	public String captureEmployeeID() {
+	public String captureEmployeeID() throws InterruptedException {
+		Thread.sleep(3000);
 		return Wait.getAttribute(captureEmployeeId, "value");
 	}
 
-	public void clickOnEmployeeList() {
-
+	public void clickOnEmployeeList() throws InterruptedException {
+		Thread.sleep(3000);
 		Wait.click(employeeList);
 
 	}
 
-	public void enterEmployeeId(String empid) {
+	public void enterEmployeeId(String empid) throws InterruptedException {
+		Thread.sleep(3000);
 		Wait.sendKeys(enterEmployeeId, empid);
 
 	}
 
-	public void clickOnSearch() {
+	public void clickOnSearch() throws InterruptedException {
+		Thread.sleep(3000);
 		Wait.click(searchButton);
 
 	}
 
+	public void selectEMPIDCheckbox() throws InterruptedException {
+		Thread.sleep(3000);
+		Wait.click(checkboxbutton);
+
+	}
+
+	public void deletebutton() throws InterruptedException {
+		Thread.sleep(3000);
+		Wait.click(deleteselectedButton);
+
+	}
+
+	public void yesDeleteButton() throws InterruptedException {
+		Thread.sleep(3000);
+		Wait.click(yesdeletedButton);
+
+	}
 }

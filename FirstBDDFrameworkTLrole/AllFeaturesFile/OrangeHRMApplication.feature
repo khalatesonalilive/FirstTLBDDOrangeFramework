@@ -21,3 +21,7 @@ Feature: Test the OrangeHRM Functionality
   Scenario: Search Employee Functionality
     When user enter employeeId
     And user click on search button
+
+  Scenario: Delete EmployeeID Functionality
+    When user click on checkbox of employeeID
+    And user selete the EmployeeId
